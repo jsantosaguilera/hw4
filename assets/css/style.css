@@ -1,11 +1,3 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-
-* {
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
-/* For sticky footer - used flexbox from https://css-tricks.com/couple-takes-sticky-footer/ */
 html,
 body {
     height: 100%;
@@ -28,12 +20,6 @@ main {
     flex: 1 0 auto;
 }
 
-/* Footer */
-footer {
-    /* css so footer is at bottom of viewport */
-    flex-shrink: 0;
-    font-size: .5rem;
-}
 
 /* hide sections until they are shown via the click events */
 #questions,
@@ -59,25 +45,3 @@ ul.nobullets {
     background-color: #28a745;
 }
 
-/* Media queries for background image from https://web.dev/optimize-css-background-images-with-media-queries/ */
-
-/* Mobile */
-@media (max-width: 480px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-/* Tablet */
-@media (min-width: 481px) and (max-width: 1024px) {
-    body {
-        background-image: url(../assets/images/markus-spiske-da7AMukpg2k-unsplash-med.jpg);
-    }
-}
-
-/* Desktop */
-@media (min-width: 1025px) {
-    body {
-        background-image: url(../assets/images/markus-spiske-da7AMukpg2k-unsplash-med.jpg);
-    }
-}
