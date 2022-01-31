@@ -15,8 +15,8 @@ const questionsEl = document.querySelector("#questions");
 let questionEl = document.querySelector("#question");
 // how many questions they have answered
 let questionCount = 0;
-// div yaynay
-const yaynayEl = document.querySelector("#yaynay");
+// div answerCorrectness
+const answerCorrectnessEl = document.querySelector("#answerCorrectness");
 
 // section final
 const finalEl = document.querySelector("#final");
@@ -129,10 +129,10 @@ function setQuestion(id) {
 function checkAnswer(event) {
     event.preventDefault();
 
-    // show section for yaynay and append message
-    yaynayEl.style.display = "block";
+    // show section for answerCorrectness and append message
+    answerCorrectnessEl.style.display = "block";
     let p = document.createElement("p");
-    yaynayEl.appendChild(p);
+    answerCorrectnessEl.appendChild(p);
 
     // time out after 1 second
     setTimeout(function () {
@@ -174,7 +174,7 @@ function addScore(event) {
       });
     
     scoreListEl.innerHTML="";
-    
+
     for (let i = 0; i < scoreList.length; i++) {
         let li = document.createElement("li");
         li.textContent = `${scoreList[i].initials}: ${scoreList[i].score}`;
